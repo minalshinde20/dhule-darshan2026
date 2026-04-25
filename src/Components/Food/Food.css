@@ -1,0 +1,130 @@
+
+/* Container */
+.food-container {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.food-header {
+  background: black;
+  padding: 15px 30px;
+}
+
+.food-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+/* Hero */
+.food-hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero-overlay h1 {
+  font-size: 50px;
+}
+
+.hero-overlay span {
+  color: orange;
+}
+
+.hero-overlay button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* About */
+.food-about {
+  text-align: center;
+  padding: 40px;
+}
+
+.food-about h2 {
+  margin-bottom: 15px;
+}
+
+/* Image */
+.food-image-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.food-image-section img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* Street Food */
+.street-food {
+  padding: 40px;
+  text-align: center;
+}
+
+.street-food h2 {
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.food-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+}
+
+.food-card h3 {
+  color: orange;
+}
+
+/* Footer */
+.food-footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

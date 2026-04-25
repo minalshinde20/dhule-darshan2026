@@ -1,0 +1,128 @@
+
+/* Page */
+.trip-page {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.trip-header {
+  background: black;
+  padding: 15px 30px;
+}
+
+.trip-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+/* Hero */
+.trip-hero {
+  position: relative;
+}
+
+.trip-hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+}
+
+/* Title */
+.trip-title {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Cards */
+.trip-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 40px;
+  gap: 25px;
+}
+
+/* Card */
+.trip-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.4s;
+  animation: fadeUp 1s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.trip-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Button */
+.book-btn {
+  margin-top: 10px;
+  background: orange;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background: #ff6600;
+}
+
+/* Footer */
+.trip-footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

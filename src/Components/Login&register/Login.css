@@ -1,0 +1,233 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e2e8f0;
+}
+
+/* ===== MAIN WRAPPER ===== */
+.login-register-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.Login_MainContainer {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+
+  /* GLASS EFFECT */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+
+}
+
+/* ===== SLIDER ===== */
+.Slider {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+
+  color: white;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  transition: 0.6s;
+}
+
+.Slider:hover {
+  filter: brightness(1.2);
+}
+
+.Registration_Entry h1,
+.Registration_Entry h2 {
+  margin: 0;
+}
+
+.Registration_Entry h4 {
+  margin: 10px 0;
+  color: #cbd5f5;
+}
+
+/* ===== FORM SECTION ===== */
+.Login_MainContainer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== LOGIN FORM ===== */
+.Login_Form {
+  width: 100%;
+  text-align: center;
+}
+
+.Login_Form h1 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.FormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* INPUT */
+.inputtag input {
+  width: 250px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  background: rgba(255,255,255,0.05);
+  color: white;
+
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS GLOW */
+.inputtag input:focus {
+  border-color: #06b6d4;
+  outline: none;
+  box-shadow: 0 0 15px #06b6d4;
+}
+
+/* LOGIN BUTTON */
+.LoginBtn {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #06b6d4, #3b82f6);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.LoginBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px #06b6d4;
+}
+
+/* ===== REGISTER FORM ===== */
+.Register_Form {
+  width: 100%;
+  text-align: center;
+}
+
+.RegiFormWrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* SCROLLBAR */
+.RegiFormWrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.RegiFormWrapper::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
+
+/* GRID */
+.Regi_Form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* INPUT */
+.field,
+.Regi_Form input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  background: rgba(255,255,255,0.05);
+  color: white;
+
+  transition: 0.3s;
+}
+
+.field:focus,
+.Regi_Form input:focus {
+  border-color: #a855f7;
+  outline: none;
+  box-shadow: 0 0 15px #a855f7;
+}
+
+/* FILE INPUT */
+.imginput {
+  border: none;
+  color: gray;
+}
+
+/* REGISTER BUTTON */
+.RegistrationBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+
+  background: linear-gradient(45deg, #a855f7, #ec4899);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.RegistrationBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px #a855f7;
+}
+
+/* TEXT */
+h4 {
+  color: #94a3b8;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Login_Form,
+.Register_Form {
+  animation: fadeIn 0.8s ease;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .Login_MainContainer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Slider {
+    width: 100%;
+    height: 150px;
+  }
+
+  .Regi_Form {
+    grid-template-columns: 1fr;
+  }
+}
